@@ -1,0 +1,32 @@
+:root {
+  --bg-dark: #0B0F19;          
+  --card-dark: #111827;         
+  --card-border: rgba(255, 255, 255, 0.08);
+  --neon-emerald: #10B981;      
+  --neon-cyan: #06B6D4;        
+  --neon-amber: #F59E0B;       
+  --neon-rose: #F43F5E;         
+  --text-bright: #F9FAFB;       
+  --text-muted: #9CA3AF;       
+  --accent-glow: rgba(16, 185, 129, 0.15);
+  
+  --radius-hud: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'JetBrains Mono', 'Fira Code', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-bright);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+button, input, select {
+  font-family: inherit;
+}

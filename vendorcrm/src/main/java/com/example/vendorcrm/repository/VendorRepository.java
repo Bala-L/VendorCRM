@@ -1,0 +1,13 @@
+package com.example.vendorcrm.repository;
+
+import com.example.vendorcrm.entity.Vendor;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface VendorRepository extends JpaRepository<Vendor, Long> {
+
+    Optional<Vendor> findByVendorCode(String vendorCode);
+
+    boolean existsByEmail(String email);
+}
